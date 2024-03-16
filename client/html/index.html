@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8">  
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
 	<meta name="description" content="A conversational AI system that listens, learns, and challenges">
@@ -77,6 +77,29 @@
 					<i class="fa-regular fa-trash"></i>
 					<span>Clear Conversations</span>
 				</button>
+
+				<div class="field">
+					<select name="language" id="language">
+						<option value="English" selected>English</option>
+						<option value="Hindi">Hindi</option>
+						<option value="Bengali">Bengali</option>
+						<option value="Tamil">Tamil</option>
+						<option value="Marathi">Marathi</option>
+						<option value="Marathi">Marathi</option>
+						<option value="Malyalam">Malyalam</option>
+					</select>
+				</div>
+
+				<div class="field">
+					<span class="about">Research Mode</span>
+					<input type="checkbox" id="switch" />
+					<label class="switch-label" for="switch"></label>
+				</div>
+
+				<div class="field">
+					<i id="speakerToggle" class="fa-solid fa-volume-high speaker-button"></i>
+				</div>
+				
 			</div>
 		</div>
 		<div class="conversation disable-scrollbars">
@@ -88,6 +111,7 @@
 			</div>
 
 			<div class="box" id="messages">
+				
 				<h1 id="greeting"> </h1>
 			</div>
 			
@@ -117,27 +141,7 @@
 			</div>
 
 			<div class="buttons">
-				<div class="field">
-					<select name="language" id="language">
-						<option value="English" selected>English</option>
-						<option value="Hindi">Hindi</option>
-						<option value="Bengali">Bengali</option>
-						<option value="Tamil">Tamil</option>
-						<option value="Marathi">Marathi</option>
-						<option value="Marathi">Marathi</option>
-						<option value="Malyalam">Malyalam</option>
-					</select>
-				</div>
-
-				<div class="field">
-					<span class="about">Research Mode</span>
-					<input type="checkbox" id="switch" />
-					<label class="switch-label" for="switch"></label>
-				</div>
-
-				<div class="field">
-					<i id="speakerToggle" class="fa-solid fa-volume-high speaker-button"></i>
-				</div>
+				
 			</div>
 
 		</div>

@@ -13,7 +13,7 @@
     --blur-bg: #292929;   /* box color */
     --blur-border: #84719040;
     --user-input: #b700ff;
-    --conversations: #c2a5ee; /* accent color (convo pane) */
+    --conversations: #c2a5ee; /* accent color (add/delete conversation pane) */
 }
 
 :root {
@@ -47,13 +47,20 @@ body {
 /* own css */
 
 .hide-greeting{
+    content: " ";
     opacity: 0;
     transition: opacity 2s ease; /* Define transition for opacity change */
 }
 
+.show-greeting{
+    content: "Hello, how may I help you?";
+    opacity: 1;
+    transition: opacity 1s ease; /* Define transition for opacity change */
+}
+
 #greeting {
-    font-family:'Poppins';
-    margin: 20px 20px;
+    /* font-family:'Poppins'; */
+    margin: 20px 30px;
     font-size: 48px;
     position: relative;
   }
@@ -134,6 +141,8 @@ body {
     scrollbar-width: thin;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    
+    display: flex;
     background-color: var(--blur-bg);
     height: 100%;
     width: 100%;
@@ -258,8 +267,8 @@ body {
     text-overflow: ellipsis;
 }
 
-.message {
 
+.message {
     width: 100%;
     overflow-wrap: break-word;
     display: flex;
