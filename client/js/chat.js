@@ -8,7 +8,7 @@ const image_upload = document.getElementById('imgUploadInput')
 const audio_icon = document.getElementById('audioIcon');
 const colorThemes = document.querySelectorAll('[name="theme"]');
 const markdown = window.markdownit(); 
-const message_box = document.getElementById(`messages`);
+const message_box = document.getElementById(`messages`); 
 const message_input = document.getElementById(`message-input`);
 const box_conversations = document.querySelector(`.top`);
 const spinner = box_conversations.querySelector(".spinner");
