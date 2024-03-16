@@ -259,7 +259,7 @@ const ask_gpt = async (message) => {
 	  greeting.classList.add('hide-greeting');
   
 	  message_box.innerHTML += `
-			  <div class="message" style="margin-top: -40px;">
+			  <div class="message">
 				  <div class="user">
 					  ${user_image}
 				  </div>

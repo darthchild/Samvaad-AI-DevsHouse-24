@@ -20,7 +20,7 @@
 		href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/styles/base16/dracula.min.css">
 	<script>
 		const user_image = `<img src="/assets/img/user.png" alt="User Avatar">`;
-		const gpt_image = `<img src="/assets/img/gpt.png" alt="GPT Avatar">`;
+		const gpt_image = `<img src="/assets/img/samvaad_logo.jpeg" alt="GPT Avatar">`;
 	</script>
 	<style>
 		.hljs {
@@ -47,12 +47,12 @@
 
 		/* Handle */
 		#message-input::-webkit-scrollbar-thumb {
-			background: #c7a2ff;
+			background: #756d52;
 		}
 
 		/* Handle on hover */
 		#message-input::-webkit-scrollbar-thumb:hover {
-			background: #8b3dff;
+			background: #797359;
 		}
 	</style>
 	<script src="/assets/js/highlight.min.js"></script>
@@ -65,19 +65,24 @@
 	<div class="gradient"></div>
 	<div class="row">
 		<div class="box conversations">
+
 			<div class="top">
+				
 				<button class="new_convo" onclick="new_conversation()">
-					<i class="fa-regular fa-plus"></i>
-					<span>New Conversation</span>
-				</button>
-				<div class="spinner"></div>
-			</div>
-			<div class="bottom_buttons">
-				<button onclick="delete_conversations()">
-					<i class="fa-regular fa-trash"></i>
-					<span>Clear Conversations</span>
+				  <i class="fa-regular fa-plus"></i>
+				  <span>New</span>
 				</button>
 
+				<button class="clear_btn" onclick="delete_conversations()">
+				  <i class="fa-regular fa-trash"></i>
+				  <span>Clear</span>
+				</button>
+
+				<div class="spinner"></div>
+
+			</div>
+
+			<div class="bottom_buttons">
 				<div class="field">
 					<select name="language" id="language">
 						<option value="English" selected>English</option>
@@ -99,8 +104,8 @@
 				<div class="field">
 					<i id="speakerToggle" class="fa-solid fa-volume-high speaker-button"></i>
 				</div>
-				
 			</div>
+
 		</div>
 		<div class="conversation disable-scrollbars">
 			<div class="stop_generating stop_generating-hidden">
@@ -110,8 +115,8 @@
 				</button>
 			</div>
 
+			<!-- Main Conversation Box-->
 			<div class="box" id="messages">
-				
 				<h1 id="greeting"> </h1>
 			</div>
 			
